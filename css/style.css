@@ -55,16 +55,17 @@
    height: 60px;
     background: url('https://i.ibb.co/HrfVRcx/menu.png');
     background-repeat: no-repeat;
-    background-size: 30px;
+    background-size: 50px;
     background-position: center;
     cursor: pointer;
     filter: invert(100%);
+    
 }
 
 .toggle.active{
     background: url('https://i.ibb.co/rt3HybH/close.png');
     background-repeat: no-repeat;
-    background-size: 25px;
+    background-size: 40px;
     background-position: center;
 }
 
