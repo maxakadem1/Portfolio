@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>MAX_NAVERN</title>
-    <link rel="icon" href="Images/favicon-letter.png">
-</head>
-<body>
+    <link rel="icon" href="Images/favicon-letter.png" />
+  </head>
+  <body>
     <section class="showcase">
+      <header>
+        <h2 class="logo">max navern</h2>
+        <div class="toggle"></div>
+      </header>
 
-        <header>
-            <h2 class="logo">max navern</h2>
-            <div class="toggle" ></div>
-        </header>
+      <video width="1920" height="1080" type="video/mp4" muted loop autoplay>
+        <source src="Videos/Chain.mp4" />
+      </video>
 
-        <video width="1920" height="1080"  type="video/mp4" muted loop autoplay>
-            <source src="Videos/Chain.mp4">
-        </video>
-        
-        <div class="overlay"></div>
+      <div class="overlay"></div>
 
-        <div class="text">
-            <h2>Text Here</h2>
-            <h3>Text 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-                aut earum ratione animi, dolorem doloribus libero adipisci cum harum,
-                quia similique nemo, officia quae placeat
-                nesciunt vitae possimus nostrum amet?</p>
-            <a href="#">Explore</a>
-        </div>
+      <div class="text">
+        <!-- <h2>Programmer/Illustrator</h2> -->
+        <h3>Programmer/Illustrator</h3>
+        <p>
+          Hi! My name is Max. I am a programmer and illustrator. I work on
+          websites using HTML, CSS, JavaScript and React. I also do graphic
+          design using Procreate. Press on explore to see some of my work!
+        </p>
+        <a href="#">Explore</a>
+      </div>
 
-        <ul class="social">
-            <li><a target="_blank" href="https://www.instagram.com/max_navern/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a></li>
-            <li><a target="_blank" href="https://twitter.com/Cabbage__Lord"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a></li>
-         
-        </ul>
+      <ul class="social">
+        <li>
+          <a target="_blank" href="https://www.instagram.com/max_navern/"
+            ><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://twitter.com/Cabbage__Lord"
+            ><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""
+          /></a>
+        </li>
+      </ul>
     </section>
 
     <div class="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Coding Potfolio</a></li>
-            <li><a href="art-porfolio.html">Art Potfolio</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Coding Potfolio</a></li>
+        <li><a href="art-porfolio.html">Art Potfolio</a></li>
+      </ul>
     </div>
-<script>
-    const menuToggle = document.querySelector('.toggle');
-    const showcase = document.querySelector('.showcase');
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
 
-    menuToggle.addEventListener('click', () => {
-
-        menuToggle.classList.toggle('active');
-        showcase.classList.toggle('active');
-    });
-</script>
-</body>
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
