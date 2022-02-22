@@ -1,4 +1,4 @@
 # Portfolio
 Personal portfolio for coding/digital art projects
-![image](https://user-images.githubusercontent.com/63835313/155051797-c15af0ea-9f44-4b89-b3c4-dad21cfe9547.png)
+![image](https://user-images.githubusercontent.com/63835313/155051890-37d0a43e-3daf-4ea6-b82f-c8c08bc596e9.png)
 
