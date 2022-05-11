@@ -94,6 +94,7 @@ https://www.youtube.com/watch?v=8MgpE2DTTKA&ab_channel=TraversyMedia*/
 
 .text {
   position: relative;
+  text-align: center;
   z-index: 10;
 }
 
