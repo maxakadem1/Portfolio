@@ -1,6 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: rgb(0, 0, 0);
+  z-index: 2;
+  filter: invert(100%);
+  transition: 0.5s;
+}
+
+.showcase.active {
+  right: 300px;
+}
+
+.showcase header {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /*opacity: 0.8;*/
+}
+
+.showcase .logo {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.showcase p {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 21%;
+  padding-right: 21%;
+  line-height: 37.5px;
+}
+
+.qualifications {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 75px;
+  padding: 1.3rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  mix-blend-mode: hard-light;
+}
+
+@media (max-width: 1120px) {
+  .showcase .logo {
+    font-size: 2.2rem;
+  }
+  .qualifications {
+    font-size: 2.5em;
+    line-height: 60px;
+    padding: 0.5rem;
+  }
+  .showcase p {
+    line-height: 40px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .showcase {
+    padding: 0px;
+  }
+  .showcase .logo {
+    font-size: 1.2rem;
+  }
+  .qualifications {
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0.5rem;
+  }
+  .showcase p {
+    line-height: 30px;
+    font-size: 1rem;
+  }
 }

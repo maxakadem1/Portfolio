@@ -44,9 +44,9 @@
 }
 
 .logo {
-  text-transform: uppercase;
   cursor: pointer;
   font-size: 3.5rem;
+  text-transform: capitalize;
 }
 
 .toggle {
