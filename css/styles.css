@@ -29,7 +29,7 @@
 
 .showcase header {
   position: absolute;
-  top: 20%;
+  top: 17%;
   left: 0;
   width: 100%;
   padding: 40px 100px;
@@ -53,13 +53,13 @@
 .showcase .logo {
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   font-weight: 800;
 }
 
 .showcase p {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
   padding-left: 21%;
@@ -70,7 +70,7 @@
 .qualifications {
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 3.8rem;
+  font-size: 3.3rem;
   text-align: center;
   font-weight: 800;
   line-height: 75px;
@@ -109,6 +109,35 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 50px;
+}
+
+.social {
+  position: relative;
+  bottom: 50px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.social li a {
+  display: inline-block;
+  margin: 10px;
+  margin-top: 6.5rem;
+  margin-bottom: 0px;
+  transition: 0.5s;
+  font-size: 250%;
+  color: aliceblue;
+  filter: invert(100%);
+}
+
+.line {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1120px) {
