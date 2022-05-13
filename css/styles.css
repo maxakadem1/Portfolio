@@ -53,7 +53,6 @@
 
 .showcase .logo {
   text-transform: uppercase;
-  cursor: pointer;
   font-size: 2.5rem;
   text-align: center;
   font-weight: 800;
@@ -70,7 +69,6 @@
 
 .qualifications {
   text-transform: uppercase;
-  cursor: pointer;
   font-size: 3.3rem;
   text-align: center;
   font-weight: 800;
@@ -112,6 +110,17 @@
   line-height: 50px;
 }
 
+.button-text {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+.button:hover {
+  background: #fbfb00;
+  cursor: pointer;
+}
+
 .button:before {
   transition: 0.5s all ease;
   position: absolute;
@@ -121,6 +130,7 @@
   bottom: 0;
   content: "";
   background: #ffffff;
+  z-index: -10;
 }
 
 .button:hover:before {
@@ -128,12 +138,11 @@
   left: 0;
   right: 0;
   opacity: 1;
-  z-index: -1;
+  z-index: -10;
 }
 
 .social {
   position: relative;
-  bottom: 70px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -145,7 +154,7 @@
 .social li a {
   display: inline-block;
   margin: 10px;
-  margin-top: 6.5rem;
+
   margin-bottom: 0px;
   transition: 0.5s;
   font-size: 250%;
@@ -159,7 +168,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  bottom: 70px;
 }
 
 .resume {
@@ -168,10 +176,34 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  bottom: 60px;
   text-transform: uppercase;
   font-weight: 500;
+  padding: 10px;
 }
+
+.resume-text:hover {
+  cursor: pointer;
+}
+
+/* .resume-text:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  content: "";
+  background: #ffffff;
+  z-index: -10;
+}
+
+.resume-text:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -10;
+} */
 
 .resume-text {
   font-size: 20px;
