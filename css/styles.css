@@ -8,6 +8,15 @@
   text-decoration: none;
 }
 
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
 .showcase {
   position: absolute;
   right: 0;
@@ -93,6 +102,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   list-style: none;
   text-align: center;
 }
