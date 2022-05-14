@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow: hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="node_modules/swup/dist/swup.min.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <title>Max A</title>
@@ -12,84 +11,81 @@
   </head>
   <body scroll="no" style="overflow: hidden">
     <section class="showcase">
-      <header id="swup" class="transition-fade">
-        <div class="main">
-          <h2 class="logo">maxim abdulkhalikov</h2>
-          <h3 class="qualifications">Programmer/Illustrator/Designer</h3>
-          <p>
-            Hi! My name is Max. I am a programmer and illustrator. I work on
-            websites using HTML, CSS, JavaScript and Figma. I also do graphic
-            design using Procreate. Press on expolre to see my work!
-          </p>
-          <ul class="buttons">
-            <li class="button">
-              <a class="button-text" href="https://github.com/maxakadem1">
-                art
+      <main id="swup" class="transition-fade">
+        <header>
+          <div class="main">
+            <h2 class="logo">maxim abdulkhalikov</h2>
+            <h3 class="qualifications">Programmer/Illustrator/Designer</h3>
+            <p>
+              Hi! My name is Max. I am a programmer and illustrator. I work on
+              websites using HTML, CSS, JavaScript and Figma. I also do graphic
+              design using Procreate. Press on expolre to see my work!
+            </p>
+            <ul class="buttons">
+              <li class="button">
+                <a class="button-text" href="/art.html"> art </a>
+              </li>
+              <li class="button">
+                <a class="button-text" href="/code.html"> code </a>
+              </li>
+              <li class="button">
+                <a class="button-text" href="/design.html"> design </a>
+              </li>
+            </ul>
+            <ul class="social">
+              <li>
+                <a target="_blank" href="https://www.instagram.com/max_navern/"
+                  ><span
+                    class="iconify"
+                    data-icon="akar-icons:instagram-fill"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/maxim-abdulkhalikov-060144217/"
+                  ><span
+                    class="iconify"
+                    data-icon="brandico:linkedin-rect"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/maxakadem1"
+                  ><span
+                    class="iconify"
+                    data-icon="akar-icons:github-fill"
+                  ></span
+                ></a>
+              </li>
+            </ul>
+            <div class="line">
+              <svg
+                class="break"
+                width="125"
+                height="4"
+                viewBox="0 0 125 4"
+                fill="#AB7C94"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 2H125" stroke="black" stroke-width="3" />
+              </svg>
+            </div>
+            <div class="resume">
+              <a href="resume.pdf" target="_blank">
+                <span class="resume-text">resume</span>
               </a>
-            </li>
-            <li class="button">
-              <a class="button-text" href="./code.html"> code </a>
-            </li>
-            <li class="button">
-              <a class="button-text" href="https://github.com/maxakadem1">
-                design
-              </a>
-            </li>
-          </ul>
-          <ul class="social">
-            <li>
-              <a target="_blank" href="https://www.instagram.com/max_navern/"
-                ><span
-                  class="iconify"
-                  data-icon="akar-icons:instagram-fill"
-                ></span
-              ></a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/maxim-abdulkhalikov-060144217/"
-                ><span class="iconify" data-icon="brandico:linkedin-rect"></span
-              ></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://github.com/maxakadem1"
-                ><span class="iconify" data-icon="akar-icons:github-fill"></span
-              ></a>
-            </li>
-          </ul>
-          <div class="line">
-            <svg
-              class="break"
-              width="125"
-              height="4"
-              viewBox="0 0 125 4"
-              fill="#AB7C94"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 2H125" stroke="black" stroke-width="3" />
-            </svg>
+            </div>
           </div>
-          <div class="resume">
-            <a href="resume.pdf" target="_blank">
-              <span class="resume-text">resume</span>
-            </a>
-          </div>
-        </div>
-      </header>
+        </header>
+      </main>
 
       <video width="1920" height="1080" type="video/mp4" muted loop autoplay>
         <source src="Videos/Chain.mp4" />
       </video>
 
       <div class="overlay"></div>
-
-      <div class="text">
-        <!-- <h2>Programmer/Illustrator</h2> -->
-        <h3>Programmer/Illustrator</h3>
-
-        <a href="#">Explore</a>
-      </div>
     </section>
 
     <div class="menu">
@@ -108,5 +104,10 @@
       });
     </script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <script src="/node_modules/swup/dist/swup.min.js"></script>
+    <script>
+      const swup = new Swup();
+    </script>
   </body>
 </html>
