@@ -9,17 +9,46 @@
     <title>Max A</title>
     <link rel="icon" href="Images/favicon-letter.png" />
   </head>
-  <body scroll="no" style="overflow: hidden">
+  <body scroll="no">
+    <video
+      class="vid"
+      width="1920"
+      height="1080"
+      type="video/mp4"
+      muted
+      loop
+      autoplay
+    >
+      <source src="Videos/Chain.mp4" />
+    </video>
+    <div class="overlay" style="position: fixed"></div>
+
     <section class="showcase">
       <main id="swup" class="transition-fade">
+        <style>
+          body {
+            overflow: hidden;
+            overflow-x: hidden;
+          }
+          .back {
+            visibility: hidden;
+          }
+        </style>
+        <div class="back">
+          <a href="/index.html">
+            <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+          </a>
+        </div>
         <header>
           <div class="main">
-            <h2 class="logo">maxim abdulkhalikov</h2>
+            <h2 class="logo" style="visibility: visible">
+              maxim abdulkhalikov
+            </h2>
             <h3 class="qualifications">Programmer/Illustrator/Designer</h3>
             <p>
               Hi! My name is Max. I am a programmer and illustrator. I work on
               websites using HTML, CSS, JavaScript and Figma. I also do graphic
-              design using Procreate. Press on expolre to see my work!
+              design using Procreate.
             </p>
             <ul class="buttons">
               <li class="button">
@@ -80,12 +109,6 @@
           </div>
         </header>
       </main>
-
-      <video width="1920" height="1080" type="video/mp4" muted loop autoplay>
-        <source src="Videos/Chain.mp4" />
-      </video>
-
-      <div class="overlay"></div>
     </section>
 
     <div class="menu">

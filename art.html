@@ -9,59 +9,41 @@
     <title>Art</title>
     <link rel="icon" href="Images/favicon-letter.png" />
   </head>
-  <body style="overflow:visible">
+  <body>
+    <video class="vid" width="1920" height="1080" type="video/mp4" muted loop autoplay>
+        <source src="Videos/Chain.mp4" />
+    </video>
+    <div class="overlay" style="position: fixed"></div>
     <section class="showcase">
       <main id="swup" class="transition-fade" >
+        <style>
+          body{
+            overflow: visible;
+            overflow-x: hidden;
+          }
+          .back {
+            visibility: visible;
+          }
+        </style>
+        <div class="back">
+          <a href="/index.html">
+            <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+          </a>
+        </div>
         <header>
           <div class="main">
-            <h2 class="logo">art page</h2>
-            <h3 class="qualifications">Programmer/Illustrator/Designer</h3>
-            <p>
-              Hi! My name is Max. I am a programmer and illustrator. I work on
-              websites using HTML, CSS, JavaScript and Figma. I also do graphic
-              design using Procreate. Press on expolre to see my work!
+            <h2 class="logo" style="visibility: hidden">art page</h2>
+            <h3 class="qualifications">illustrations</h3>
+            <h4 class="selected">- selected pieces -</h4>
+            <p class="art-p">
+              Illustrations are a big part of my life.
+            </p> 
+            <p class="art-p">
+              They are a hobby as well as a part of my job, and the best way to relax.
             </p>
-            <p>
-              Hi! My name is Max. I am a programmer and illustrator. I work on
-              websites using HTML, CSS, JavaScript and Figma. I also do graphic
-              design using Procreate. Press on expolre to see my work!
-            </p>
-            <p>
-              Hi! My name is Max. I am a programmer and illustrator. I work on
-              websites using HTML, CSS, JavaScript and Figma. I also do graphic
-              design using Procreate. Press on expolre to see my work!
-            </p>
-             <p>
-              Hi! My name is Max. I am a programmer and illustrator. I work on
-              websites using HTML, CSS, JavaScript and Figma. I also do graphic
-              design using Procreate. Press on expolre to see my work!
-            </p>
-             <p>
-              Hi! My name is Max. I am a programmer and illustrator. I work on
-              websites using HTML, CSS, JavaScript and Figma. I also do graphic
-              design using Procreate. Press on expolre to see my work!
-            </p>
-            <ul class="buttons">
-              <li class="button">
-                <a class="button-text" href="/index.html"> back </a>
-              </li>
-              <li class="button">
-                <a class="button-text" href="/code.html"> code </a>
-              </li>
-              <li class="button">
-                <a class="button-text" href="/design.html"> design </a>
-              </li>
-            </ul>
+
         </header>
-      </main>
-
-      <video width="1920" height="1080" type="video/mp4" muted loop autoplay>
-        <source src="Videos/Chain.mp4" />
-      </video>
-
-      <div class="overlay"></div>
-
-      
+      </main> 
     </section>
 
     <div class="menu">
@@ -80,7 +62,6 @@
       });
     </script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-
     <script src="/node_modules/swup/dist/swup.min.js"></script>
     <script>
       const swup = new Swup();

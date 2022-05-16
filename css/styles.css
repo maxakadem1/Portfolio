@@ -19,6 +19,11 @@ html.is-animating .transition-fade {
   z-index: 10;
 }
 
+html.is-animating .back {
+  opacity: 0;
+  z-index: 10;
+}
+
 .showcase {
   position: absolute;
   right: 0;
@@ -28,8 +33,6 @@ html.is-animating .transition-fade {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
-  color: rgb(0, 0, 0);
   z-index: 2;
   filter: invert(100%);
   transition: 0.5s;
@@ -61,6 +64,27 @@ html.is-animating .transition-fade {
   /*opacity: 0.8;*/
 }
 
+.vid {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  filter: invert(100%);
+  /*opacity: 0.8;*/
+}
+
+.not-home-video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -100;
+}
+
 .showcase .logo {
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -86,6 +110,20 @@ html.is-animating .transition-fade {
   padding: 0.4rem;
 }
 
+.selected {
+  position: relative;
+  text-align: center;
+  padding-bottom: 1rem;
+  bottom: 10px;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+.art-p {
+  width: 1500px;
+  line-height: 37.5px;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -94,6 +132,7 @@ html.is-animating .transition-fade {
   height: 100%;
   background: #03a9f4;
   mix-blend-mode: hard-light;
+  filter: invert(100%);
 }
 
 .buttons {
@@ -194,6 +233,31 @@ html.is-animating .transition-fade {
 
 .resume-text:hover {
   cursor: pointer;
+}
+
+.back {
+  position: fixed;
+  top: 10%;
+  left: 8%;
+  width: 48px;
+  height: 48px;
+  z-index: 100;
+  /* ----- */
+  transition: 500ms;
+  opacity: 1;
+  z-index: 10;
+}
+
+.back svg {
+  width: inherit;
+  height: inherit;
+}
+
+.back a {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  color: rgb(0, 0, 0);
 }
 
 /* .resume-text:before {
