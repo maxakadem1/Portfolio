@@ -124,6 +124,35 @@ html.is-animating .back {
   line-height: 37.5px;
 }
 
+.art-and-vid {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  text-align: center;
+}
+
+.art-and-vid a li img {
+  width: 100px;
+  height: 100px;
+}
+
+.art-and-vid a li video {
+  width: 100px;
+  height: 100px;
+}
+
+.space {
+  padding-top: 300px;
+}
+.space-2 {
+  padding-top: 100px;
+}
+
 .overlay {
   position: absolute;
   top: 0;
