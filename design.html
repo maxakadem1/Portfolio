@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow-y: scroll;">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,33 +8,77 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Design</title>
     <link rel="icon" href="Images/favicon-letter.png" />
-    
   </head>
-  <meta http-equiv="refresh" content="1">
-  <body style="position: absolute;">
+  <body>
+    <video class="vid" width="1920" height="1080" type="video/mp4" muted loop autoplay>
+        <source src="Videos/Chain.mp4" />
+    </video>
+    <div class="overlay" style="position: fixed"></div>
     <section class="showcase">
       <main id="swup" class="transition-fade" >
+        <style>
+          body{
+            overflow: visible;
+            overflow-x: hidden;
+          }
+          .back {
+            visibility: visible;
+          }
+        </style>
+        <div class="back">
+          <a href="/index.html">
+            <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+          </a>
+        </div>
         <header>
           <div class="main">
-            <h2 class="logo">design page</h2>
-            <h3 class="qualifications">Programmer/Illustrator/Designer</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sed, ipsam culpa iusto, repellendus assumenda veniam quo recusandae
-              earum aliquid dolor nisi quia sequi dolores error asperiores voluptas
-              non quasi ipsum, inventore eum officiis dolore molestias.
-            </p>
+            <h2 class="logo" style="visibility: hidden">design page</h2>
+            <h3 class="qualifications">design</h3>
+            <h4 class="selected">- selected pieces -</h4>
+            <p class="art-p">
+              Design is something that I was interested in from my days in art school.
+              From learning how to use photoshop for school projects, I improved to
+              creating website designs in figma.
+            </p> 
+            <div class="space"></div>
+            <h3 class="qualifications">avantagrde advertising</h3> 
+            <p class="art-p">figma prototype</p>
+            <ul class="art-and-vid">
+                <li>
+                  <a target="_blank" href="https://www.figma.com/file/Vto2GZ37XSCgp6cYhBhaWG/Avantgarde-Design?node-id=0%3A1">
+                    <img style="width: 600px" src="./Images/avant1.png" alt="First picture"> 
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.figma.com/file/Vto2GZ37XSCgp6cYhBhaWG/Avantgarde-Design?node-id=0%3A1">
+                    <img style="width: 650px" src="./Images/avant3.png" alt="First picture"> 
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.figma.com/file/Vto2GZ37XSCgp6cYhBhaWG/Avantgarde-Design?node-id=0%3A1">
+                    <img style="width: 680px" src="./Images/avant4.png" alt="First picture"> 
+                  </a>
+                </li>
+            </ul>
+            <div class="space-2"></div>
+            <h3 class="qualifications">personal portfolio</h3> 
+            <p class="art-p">figma prototype</p>
+            <ul class="art-and-vid">
+                <li>
+                  <a target="_blank" href="https://www.figma.com/file/7myuBsGguCWTV5ZAsrghuq/Untitled">
+                    <img style="width: 650px" src="./Images/folio1.png" alt="First picture"> 
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.figma.com/file/7myuBsGguCWTV5ZAsrghuq/Untitled">
+                    <img style="width: 650px" src="./Images/folio2.png" alt="First picture"> 
+                  </a>
+                </li>
+            </ul>
             
+
         </header>
-      </main>
-
-      <video width="1920" height="1080" type="video/mp4" muted loop autoplay>
-        <source src="Videos/Chain.mp4" />
-      </video>
-
-      <div class="overlay"></div>
-
-      
+      </main> 
     </section>
 
     <div class="menu">
@@ -53,7 +97,6 @@
       });
     </script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-
     <script src="/node_modules/swup/dist/swup.min.js"></script>
     <script>
       const swup = new Swup();
