@@ -362,7 +362,15 @@ html.is-animating .back {
     width: 100%;
   }
   .art-and-vid li a img {
-    width: 70% !important;
-    height: 70% !important;
+    width: 120% !important;
+    height: 120% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .qualifications {
+    font-size: 1.2em;
+    line-height: 30px;
+    padding: 0.5rem;
   }
 }
